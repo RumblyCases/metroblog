@@ -23,6 +23,7 @@ header{
 ul{
     display: flex;
 }
+/**/
 .top-slide{
     width: 1025px;
     margin: 0 auto;
@@ -52,7 +53,7 @@ ul{
     color: #fff;
 }
 .video-review-btn a::before{
-    content: url(../img/cam.png);
+    content: url( ' ../img/cam.png ' );
 }
 .video-review-btn{
   /*   border: 1px solid red ;*/
@@ -62,4 +63,23 @@ ul{
     padding: 5px 15px;
     margin-top: 15px;
     cursor: pointer;
+}
+/**/
+.article{
+    width: 1025px;
+    margin: 0 auto;
+}
+.posts{
+    width: 60%;
+    margin-top: auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.post{
+   /*  border: 1px solid red ; */
+    margin-top: 50px;
+    margin-right: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
