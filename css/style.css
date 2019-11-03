@@ -1,0 +1,26 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+header{
+    padding: 45px 0;
+    border-bottom: 2px solid #E5E5E5;
+}
+.container{
+    width: 1025px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.container a{
+    color: #323332;
+    font-size: 23px;
+    padding: 18px 20px;
+    margin-right: 35px;
+}
+.container a:hover{
+    background-color: #323332 ;
+    color: #fff;
+}
+ul{
+    display: flex;
+}
