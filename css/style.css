@@ -14,8 +14,7 @@ header{
 .container a{
     color: #323332;
     font-size: 23px;
-    padding: 18px 20px;
-    margin-right: 35px;
+    padding: 8px 26px 8px 12px;
 }
 .container a:hover{
     background-color: #323332 ;
@@ -23,4 +22,44 @@ header{
 }
 ul{
     display: flex;
+}
+.top-slide{
+    width: 1025px;
+    margin: 0 auto;
+    padding: 115px 0 60px ;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+}
+.main-text{
+    color: #5D5D5D;
+}
+.top-slide h2{
+  /*   border: 1px solid ;*/
+    /* display: inline-block; */
+    margin-right: 60px;
+    width: 320px;
+    font-weight: 400;
+    font-size: 60px; 
+}
+.top-slide h3{
+  /*   border: 1px solid blue;*/ 
+    /* display: inline-block; */
+    font-weight: 400;
+    font-size: 45px; 
+}
+.video-review-btn a{
+    color: #fff;
+}
+.video-review-btn a::before{
+    content: url(../img/cam.png);
+}
+.video-review-btn{
+  /*   border: 1px solid red ;*/
+    display: inline-block;
+    background-color:#323332;
+    color: #fff;
+    padding: 5px 15px;
+    margin-top: 15px;
+    cursor: pointer;
 }
