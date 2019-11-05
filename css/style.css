@@ -65,6 +65,21 @@ ul{
     margin: 0 auto;
     color: #848484;
 }
+.owl-carousel .slide{
+    width: 700px;
+    display: flex;
+}
+.txt{
+    display: inline-block;
+    margin-left: 60px;
+}
+.txt p{
+    font-size: 14px;
+}
+.txt h2{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
 .posts{
     margin-top: auto;
     display: grid;
@@ -87,25 +102,9 @@ ul{
     display: inline-block;
     padding-bottom: 15px ; 
 }
-.owl-carousel{
-    display: flex;
-    justify-content: space-between;
-}
-.owl-carousel h2{
-    font-weight: 400;
-    font-size: 30px;
-}
-.slide-text{ 
-    margin-left: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-}
 .main-content{
     width: 700px;
     display: flex;
-    
 }
 .main-content h2{
     display: inline-block;

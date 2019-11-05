@@ -1,3 +1,7 @@
 $(document).ready(function(){
-    $(".owl-carousel").owlCarousel(10);
+    $(".owl-carousel").owlCarousel({
+    nav:true,
+    });
   });
+
+
