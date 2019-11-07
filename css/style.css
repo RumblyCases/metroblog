@@ -1,121 +1,182 @@
-body{
-    font-family: 'Open Sans', sans-serif;
+body {
+    font-family: 'Segoe UI Light';
 }
-header{
+
+header {
     padding: 45px 0;
     border-bottom: 2px solid #E5E5E5;
 }
-.container{
+
+.container {
     width: 1025px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
 }
-.container a{
+.main-menu li a{
     color: #323332;
     font-size: 23px;
-    padding: 8px 26px 8px 12px;
+    padding: 5px 20px;
+    margin: 0 15px;
 }
-.container a:hover{
-    background-color: #323332 ;
+.container a:hover {
+    background-color: #323332;
     color: #fff;
 }
-ul{
+ul {
+    display: flex;
+    margin-right: -70px;
+}
+
+.logo a:hover{
+    background: none;
+    cursor: pointer;
+}
+
+.no-js .owl-carousel, .owl-carousel.owl-loaded {
+    max-width: 700px;
+}
+
+.slide {
     display: flex;
 }
-/**/
-.top-slide{
+
+.owl-next span, .owl-prev span {
+    font-size: 0;
+}
+.owl-nav {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -40px;
+    position: relative;
+}
+.owl-carousel .owl-nav .owl-next, .owl-carousel .owl-nav .owl-prev {
+    width: 31px !important;
+    height: 39px !important;
+    background: url(../img/arrow-next.png) no-repeat center center #989998 !important;
+
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.owl-carousel .owl-nav .owl-next {
+}
+.owl-carousel .owl-nav .owl-prev {
+    transform: rotate(180deg);
+}
+.owl-carousel .owl-nav .owl-prev.disabled {
+    filter: brightness(.8);
+}
+    /**/
+.top-slide {
     width: 1025px;
     margin: 0 auto;
-    padding: 115px 0 60px ;
+    padding: 115px 0 60px;
     display: flex;
     justify-content: space-between;
     align-self: center;
 }
-.main-text{
+
+.main-text {
     color: #5D5D5D;
 }
-.top-slide h2{
+
+.top-slide h2 {
     margin-right: 60px;
     width: 320px;
     font-weight: 400;
-    font-size: 60px; 
+    font-size: 60px;
 }
-.top-slide h3{
+
+.top-slide h3 {
     font-weight: 400;
-    font-size: 45px; 
+    font-size: 45px;
 }
-.video-review-btn a{
+
+.video-review-btn a {
     color: #fff;
 }
-.video-review-btn a::before{
-    content: url( ' ../img/cam.png ' );
+
+.video-review-btn a::before {
+    content: url(' ../img/cam.png ');
 }
-.video-review-btn{
+
+.video-review-btn {
     display: inline-block;
-    background-color:#323332;
+    background-color: #323332;
     color: #fff;
     padding: 5px 15px;
     margin-top: 15px;
     cursor: pointer;
 }
+
 /**/
-.article{
+.article {
     width: 1025px;
     margin: 0 auto;
     color: #848484;
 }
-.owl-carousel .slide{
-    width: 700px;
-    display: flex;
-}
-.txt{
+.txt {
     display: inline-block;
-    margin-left: 60px;
+    margin: 0 30px;
 }
-.txt p{
+
+.txt p {
     font-size: 14px;
+    text-align: justify;
+    padding: 0 60px 0 0;
 }
-.txt h2{
+
+.txt h2 {
     font-size: 30px;
     margin-bottom: 20px;
 }
-.posts{
+.main-content {
+    width: 700px;
+    display: flex;
+}
+
+.main-content h2 {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 30px;
+}
+
+.main-content h3 {
+    font-size: 13px;
+    font-weight: 400;
+}
+.posts {
     margin-top: auto;
     display: grid;
-    grid-template-columns: auto auto auto ;   
+    grid-template-columns: auto auto auto;
 }
-.post{
+.post {
     width: 235px;
-    margin-top:50px;
+    margin-top: 50px;
     margin-right: 15px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
 }
+
+.post h2, .post h3{
+    display: inline-block;
+    padding-bottom: 15px;
+
+}
 .post h2{
+    font-size: 26px;
+}
+.post p{
     display: inline-block;
-    padding-bottom: 15px ; 
+    width: 220px;
+    font-size: 14px;
+    text-align: justify;
+    word-spacing: 1px;
 }
-.post h3{
-    display: inline-block;
-    padding-bottom: 15px ; 
-}
-.main-content{
-    width: 700px;
-    display: flex;
-}
-.main-content h2{
-    display: inline-block;
-    font-weight: 400;
-    font-size: 25px;
-}
-.main-content h3{
-    font-size: 13px;
-    font-weight: 400;
-}
-.join-form{
+
+.join-form {
     margin-top: 20px;
     padding: 20px 30px;
     color: #EBEBEB;
@@ -123,47 +184,121 @@ ul{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    border-bottom: 10px solid #BB4465;
 }
-.join-form h3{
+
+.join-form h3 {
     margin: 0 auto;
     font-weight: 400;
     font-size: 27px;
     text-transform: uppercase;
-    
+
 }
-.join-form p{
+
+.join-form p {
     font-weight: 400;
     font-size: 27px;
     font-size: 16px;
 }
-input{
+
+.join-form input {
     height: 30px;
     margin-top: 15px;
 }
-.submit{
-    background-color:#BB4465;
+/**/
+.submit {
+    font-family: 'Optima LT';
+    background-color: #BB4465;
     color: #EBEBEB;
     margin: 0 auto;
     width: 180px;
+    height: 35px;
     border: none;
-    border-radius: 4px;
-    cursor:pointer;
-    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;   
 }
-footer{
+
+/**/
+.week-form {
+    height: 260px;
+    font-family: 'Optima Regular';
+    padding: 15px 20px;
+    color: #EBEBEB;
+    background-color: #86E7F0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.week-form *{
+    color: #fff;
+}
+.week-form h2, .week-form h3{
+    font-family: 'Segoe UI Light';
+    font-weight: 500;
+    display: inline-block;
+    margin: 0 auto;
+    margin-top: -20px;    
+}
+.week-form h2{
+    text-transform: uppercase;
+    font-size: 45px;
+}
+.week-form h3{
+    font-size: 23px;
+    text-align: center;
+}
+.week-form input{
+    margin-top: -20px;
+    color:#fff;
+    background-color: #58D1DC;
+}
+.week-logo{
+    line-height: auto;
+    margin: 0 auto;
+    margin-top: -35px;
+    width: 130px;
+    height: 130px;
+    text-align: center;
+    background-color: #EF809F;
+    border-radius: 50%;
+    border: 5px solid #fff;
+}
+
+.week-logo h2{
+    line-height: 80px;
+    margin-top: 20px;
+    font-size: 72px;
+    font-family: 'Optima Bold';
+    font-weight: 900;
+}
+.week-logo p{
+    margin-top: -15px;
+    font-family: 'Segoe UI Light';
+    text-transform: uppercase;
+}
+
+/**/
+footer {
     margin-top: 60px;
     background-color: #393A39;
 }
-footer p{
+
+footer p {
     margin: 0 auto;
     color: #fff;
-    font-size: 16px; 
+    font-size: 16px;
 }
-.footer-container{ 
+
+.footer-container {
     width: 1025px;
     height: 85px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.social-icons a{
+    margin: 0 8px;
 }
